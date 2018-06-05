@@ -14,15 +14,16 @@
 }
 
 .project {
-  width: 300px;
-  height: 394px;
+  width: 270px;
+  height: 383px;
   margin: 48px;
   display: inline-block;
   position: relative;
+  vertical-align: top;
 }
 
 .project img {
-  width: 300px;
+  width: 270px;
   height: auto;
   margin: 0;
   padding: 0;
@@ -30,21 +31,21 @@
   top: 0;
   left: 0;
   transition: all 0.3s;
-  border-radius: 20px;
+  border-radius: 35px;
 }
 
 .project:hover img {
-  width: 320px;
+  width: 290px;
   top: -16px;
   left: -10px;
-  border-radius: 22px;
+  border-radius: 38px;
 }
 
 .project h3 {
   color: white;
   text-align: left;
   margin: 0;
-  margin-top: 320px;
+  margin-top: 290px;
   font-weight: 500;
   font-size: 1.6em;
   padding: 0 0 0 12px;
@@ -74,8 +75,15 @@
     margin: 35px 25px 45px 25px;
   }
 }
-/* Turns to two wide Here at 1060px */
+
 @media (max-width: 1060px) {
+  .project {
+    margin: 35px 22px 45px 22px;
+  }
+}
+
+/* Turns to two wide Here at 1000px */
+@media (max-width: 1000px) {
   .project {
     margin: 30px 50px 30px 50px;
   }
@@ -93,8 +101,23 @@
   }
 }
 
-@media (max-width: 705px) {
+/* Turns to one wide Here at 645px */
+@media (max-width: 645px) {
   .project {
     margin: 30px 25px 45px 25px;
+    width: 300px;
+    height: auto;
+    margin: 48px;
+  }
+  .project img {
+    width: 300px;
+    border-radius: 38px;
+  }
+  .project:hover img {
+    width: 300px;
+    border-radius: 42px;
+  }
+  .project h3 {
+    margin-top: 320px;
   }
 }

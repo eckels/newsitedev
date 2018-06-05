@@ -9,13 +9,13 @@ $(document).ready(function() {
     }
     document.getElementsByClassName('project')[i].setAttribute("data-aos-delay", delayCounter);
     i++
-    if (i % 3 == 0 && $(window).width() >= 1015) {
+    if (i % 3 == 0 && $(window).width() >= 1000) {
       delayCounter = 0;
     }
-    if (i % 2 == 0 && $(window).width() <= 1015 && $(window).width() > 665) {
+    if (i % 2 == 0 && $(window).width() <= 1000 && $(window).width() > 645) {
       delayCounter = 0;
     }
-    if ($(window).width() <= 665) {
+    if ($(window).width() <= 645) {
       delayCounter = 0;
     }
     delayCounter = delayCounter + 150;
