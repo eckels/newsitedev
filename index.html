@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="aos/aos.css" />
+  	<meta name="description" content="Web Portfolio for Evan Eckels, a High School Web Developer/Designer" />
+    <meta name="keywords" content="Evan, Eckels, Web, Developer, Designer, High School, Hackathon, coding, programming, computer, science, user, interface, experience, graphic, design, Palatine, UIUC, Illinois, University" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/index.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110019881-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110019881-1');
+    </script>
+    <title>Evan Eckels</title>
+  </head>
+
+<body>
+
+  <header id="header">
+    <nav>
+      <ul>
+        <li><a href="work.html">Projects</a></li>
+        <li><a href="#about" class="smooth">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="text">
+      <h1 id="first" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="50">Evan</h1><br>
+      <h1 data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="150" data-aos-anchor="#first">Eckels</h1>
+      <p data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="250" data-aos-anchor="#first">Designer and Developer</p>
+    </div>
+    <div class="shader"></div>
+    <a data-aos="fade" data-aos-easing="ease-out-quad" data-aos-delay="200" data-aos-duration="1000" data-aos-anchor="#first" href="#projects" class="smooth"><img src="img/arrow.svg" alt="Scroll Down Arrow" class="arrow"></a>
+  </header>
+
+  <div id="projects">
+    <div class="section-header">
+      <hr id="first2" data-aos="fade-right" data-aos-easing="ease-out-quad" data-aos-delay="0" data-aos-duration="450">
+      <h2 data-aos="fade-right" data-aos-easing="ease-out-quad" data-aos-delay="50" data-aos-duration="450">Featured Projects</h2>
+      <p data-aos="fade-right" data-aos-easing="ease-out-quad" data-aos-delay="200" data-aos-duration="450" data-aos-anchor="#first2">Click on and explore my recent projects</p>
+    </div>
+  </div>
+
+    <script src="aos/aos.js"></script>
+    <script>
+      AOS.init({
+        startEvent: 'load',
+        once: true
+      });
+      window.addEventListener('load', function() {
+        AOS.refresh();
+      });
+    </script>
+
+</body>
+</html>
