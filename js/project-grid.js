@@ -9,10 +9,7 @@ $(document).ready(function() {
     if (i % 3 == 0 && $(window).width() >= 1000) {
       delayCounter = 0;
     }
-    if (i % 2 == 0 && $(window).width() <= 1000 && $(window).width() > 645) {
-      delayCounter = 0;
-    }
-    if ($(window).width() <= 645) {
+    if (i % 2 == 0 && $(window).width() <= 1000) {
       delayCounter = 0;
     }
     delayCounter = delayCounter + 150;

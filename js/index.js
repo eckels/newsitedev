@@ -6,7 +6,7 @@ $(document).ready(function(){
     $('.smooth').smoothScroll();
 
     $(window).scroll(function(){
-        $(".shader").css("opacity", .3 - $(window).scrollTop() / 1000);
+        $(".shader").css("opacity", .45 - $(window).scrollTop() / 700);
         $(".arrow").css("opacity", .5 - $(window).scrollTop() / 400);
       });
 

@@ -18,7 +18,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.45;
   z-index: -1;
 }
 
@@ -144,5 +144,14 @@ header .text {
 
 #projects {
   width: 100%;
-  padding: 40px 0 100px 0;
+  padding: 40px 0 50px 0;
+}
+
+#projects .button-div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#about {
+  padding: 50px 0 50px 0;
 }

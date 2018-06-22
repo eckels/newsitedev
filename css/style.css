@@ -87,6 +87,29 @@ nav a:hover::before {
   }
 }
 
+button {
+  position: relative;
+  top: 0;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  border: none;
+  background-color: #ff103d;
+  color: rgba(255, 255, 255, 0.85);
+  width: 260px;
+  padding: 20px 0 20px 0;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 30px;
+  transition: all 0.2s;
+}
+
+button:hover {
+  top: -4px;
+  color: white;
+}
+
 footer {
 
 }

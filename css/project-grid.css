@@ -101,28 +101,191 @@
   }
 }
 
-/* Turns to one wide Here at 645px */
+/* Turns to smaller Here at 645px */
 @media (max-width: 645px) {
   .project {
-    margin: 30px 25px 45px 25px;
-    width: 300px;
-    height: auto;
+    margin: 30px 20px 30px 20px;
+    width: 230px;
+    height: 331px;
   }
   .project img {
-    width: 300px;
-    border-radius: 38px;
+    width: 230px;
+    border-radius: 28px;
   }
   .project:hover img {
-    width: 300px;
-    border-radius: 42px;
+    width: 250px;
+    border-radius: 32px;
   }
   .project h3 {
-    margin-top: 320px;
+    text-align: left;
+    margin: 0;
+    margin-top: 245px;
+    font-weight: 500;
+    font-size: 1.4em;
+    padding: 0 0 0 12px;
+    letter-spacing: 0.05em;
+  }
+  .project .desc {
+    margin: 0;
+    margin-top: 6px;
+    text-align: left;
+    padding: 0 0 0 12px;
+    font-weight: 300;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 545px) {
   .project {
-    margin: 30px 10px 45px 10px;
+    margin: 26px 18px 26px 18px;
+    width: 200px;
+    height: 296px;
+  }
+  .project img {
+    width: 200px;
+    border-radius: 32px;
+  }
+  .project:hover img {
+    width: 220px;
+    border-radius: 36px;
+  }
+  .project h3 {
+    text-align: left;
+    margin: 0;
+    margin-top: 215px;
+    font-size: 1.3em;
+    padding: 0 0 0 6px;
+  }
+  .project .desc {
+    margin: 0;
+    margin-top: 6px;
+    text-align: left;
+    padding: 0 0 0 6px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 478px) {
+  .project {
+    margin: 18px 10px 18px 10px;
+    width: 180px;
+    height: 298px;
+  }
+  .project img {
+    width: 180px;
+    border-radius: 28px;
+  }
+  .project:hover img {
+    width: 200px;
+    border-radius: 32px;
+  }
+  .project h3 {
+    text-align: left;
+    margin: 0;
+    margin-top: 190px;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0 0 0 6px;
+    letter-spacing: 0.05em;
+  }
+  .project .desc {
+    margin: 0;
+    margin-top: 6px;
+    text-align: left;
+    padding: 0 0 0 6px;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: 420px) {
+  .project {
+    margin: 20px 14px 20px 14px;
+    width: 160px;
+    height: 273px;
+  }
+  .project img {
+    width: 160px;
+    border-radius: 26px;
+  }
+  .project:hover img {
+    width: 175px;
+    border-radius: 30px;
+  }
+  .project h3 {
+    margin-top: 170px;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 380px) {
+  .project {
+    margin: 18px 10px 18px 10px;
+    width: 150px;
+    height: 276px;
+  }
+  .project img {
+    width: 150px;
+    border-radius: 24px;
+  }
+  .project:hover img {
+    width: 165px;
+    border-radius: 28px;
+  }
+  .project h3 {
+    text-align: left;
+    margin: 0;
+    margin-top: 160px;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0 0 0 3px;
+    letter-spacing: 0.05em;
+  }
+  .project .desc {
+    margin: 0;
+    margin-top: 6px;
+    text-align: left;
+    padding: 0 0 0 3px;
+    line-height: 125%;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: 344px) {
+  .project {
+    margin: 16px 8px 16px 8px;
+    width: 136px;
+    height: 254px;
+  }
+  .project img {
+    width: 136px;
+    border-radius: 20px;
+  }
+  .project:hover img {
+    width: 145px;
+    border-radius: 24px;
+  }
+  .project h3 {
+    text-align: left;
+    margin: 0;
+    margin-top: 146px;
+    font-weight: 500;
+    font-size: 1.15em;
+    padding: 0 0 0 2px;
+    letter-spacing: 0.05em;
+  }
+  .project .desc {
+    margin: 0;
+    margin-top: 6px;
+    text-align: left;
+    padding: 0 0 0 2px;
+    line-height: 125%;
+    font-weight: 300;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
   }
 }
