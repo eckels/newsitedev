@@ -38,3 +38,27 @@ header {
   font-size: 0.9em;
   margin-top: 16px;
 }
+
+@media (max-width: 800px) {
+  .projects-center {
+    padding: 80px 0 40px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    margin-bottom: 30px;
+  }
+  .projects-center {
+    padding: 50px 0 20px 0;
+  }
+  .projects-center h1 {
+    font-size: 2em;
+  }
+  .projects-center hr {
+    width: 100px;
+  }
+  .projects-center p {
+    font-size: 0.8em;
+  }
+}
