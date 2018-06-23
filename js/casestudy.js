@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.shader2').css('height', myHeight);
 
     $(window).scroll(function(){
-        $(".shader").css("opacity", .55 - $(window).scrollTop() / 500);
+        $(".shader").css("opacity", .6 - $(window).scrollTop() / 500);
       });
 
   $(window).resize(function() {
