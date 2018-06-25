@@ -20,6 +20,20 @@ header {
   left: 0;
   opacity: 0.45;
   z-index: -1;
+  -webkit-animation-name: modalFade2;
+  -webkit-animation-duration: 1s;
+  animation-name: modalFade2;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes modalFade2 {
+  from {opacity: 0;}
+  to {opacity: 0.45;}
+}
+
+@keyframes modalFade2 {
+  from {opacity: 0;}
+  to {opacity: 0.45;}
 }
 
 header .text {
