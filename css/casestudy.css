@@ -99,6 +99,7 @@ span:after {
 }
 
 .shader {
+  display: block;
   height: 500px;
   position: absolute;
   width: 100%;
