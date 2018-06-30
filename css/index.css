@@ -181,6 +181,7 @@ header .text {
   float: left;
   margin-left: 0;
   margin-right: 50px;
+  margin-bottom: 30px;
 }
 
 .about-shader {
@@ -231,4 +232,38 @@ header .text {
   .about-desc {
     margin-right: 40px;
   }
+}
+
+@media (max-width: 730px) {
+  .about-left {
+    float: none;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  .about-desc {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-desc {
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 86%;
+  }
+}
+
+#blog {
+  padding: 50px 0 50px 0;
+}
+
+#blog h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 1.6em;
 }
