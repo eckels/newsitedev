@@ -1,0 +1,284 @@
+{
+  "startingRoom": "SouthwestTower",
+  "endingRoom": "TreasureRoom",
+  "rooms": [
+    {
+      "name": "SouthwestTower",
+      "description": "You are in a Tower, on the Southwestern most part of the castle.",
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "DogRoom",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        },
+        {
+          "directionName": "East",
+          "room": "GarbageRoom",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [],
+      "opponents": []
+    },
+    {
+      "name": "DogRoom",
+      "description": "You enter a room and see a very angry dog that attacks you.",
+      "directions": [
+        {
+          "directionName": "South",
+          "room": "SouthwestTower",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        },
+        {
+          "directionName": "East",
+          "room": "WestHallway",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [],
+      "opponents": [
+        {
+          "name": "Dog",
+          "defense": 1
+        }
+      ]
+    },
+    {
+      "name": "WestHallway",
+      "description": "You see a locked door ahead and hear a deep breathing coming from the locked room.",
+      "directions": [
+        {
+          "directionName": "East",
+          "room": "TreasureRoom",
+          "enabled": "false",
+          "validKeyNames": ["IronKey"]
+        },
+        {
+          "directionName": "West",
+          "room": "DogRoom",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [],
+      "opponents": []
+    },
+    {
+      "name": "GarbageRoom",
+      "description": "You are in the garbage room. You see a locked room ahead.",
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "SouthwestTower",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }, 
+        {
+          "directionName": "East",
+          "room": "SouthHallway",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [],
+      "opponents": []
+    },
+    {
+      "name": "SouthHallway",
+      "description": "You are in the southern most hallway. You see a room full of treasure towards the center of the castle. You see a cozy room ahead but feel suspicion this isn't the southern most room...",
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "TreasureRoom",
+          "enabled": "false",
+          "validKeyNames": ["IronKey"]
+        },
+        {
+          "directionName": "East",
+          "room": "Bedroom",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        },
+        {
+          "directionName": "West",
+          "room": "GarbageRoom",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        },
+        {
+          "directionName": "South",
+          "room": "KingsArmory",
+          "enabled": "hidden",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [],
+      "opponents": []
+    },
+    {
+      "name": "TreasureRoom",
+      "description": "You enter a room filled with treasure, but a massive dragon lies there waiting. The dragon attacks.",
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "WestHallway",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        },
+        {
+          "directionName": "South",
+          "room": "SouthHallway",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        },
+        {
+          "directionName": "East",
+          "room": "EastHallway",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [],
+      "opponents": [
+        {
+          "name": "Dragon",
+          "defense": 10
+        }
+      ]
+    },
+    {
+      "name": "EastHallway",
+      "description": "You see a locked door ahead and hear a deep breathing coming from the locked room.",
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "TreasureRoom",
+          "enabled": "false",
+          "validKeyNames": ["IronKey"]
+        },
+        {
+          "directionName": "East",
+          "room": "Armory",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [],
+      "opponents": []
+    },
+    {
+      "name": "Armory",
+      "description": "You are in the castle's armory and see weaponry and armor everywhere.",
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "EastHallway",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        },
+        {
+          "directionName": "South",
+          "room": "SoutheastTower",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [
+        {
+          "name": "IronSword",
+          "power": 5
+        }
+      ],
+      "opponents": []
+    },
+    {
+      "name": "SoutheastTower",
+      "description": "You are in a Tower, on the Southeastern most part of the castle.",
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "Armory",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        },
+        {
+          "directionName": "West",
+          "room": "Bedroom",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [
+        {
+          "name": "IronKey",
+          "power": 0
+        }
+      ],
+      "opponents": []
+    },
+    {
+      "name": "Bedroom",
+      "description": "You are in the kings bedroom, with ornate decorations and a huge wardrobe.",
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "SouthHallway",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        },
+        {
+          "directionName": "East",
+          "room": "SoutheastTower",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [
+        {
+          "name": "KingsHelmet",
+          "power": 3
+        }
+      ],
+      "opponents": []
+    },
+    {
+      "name": "KingsArmory",
+      "description": "You are in the kings secret armory, you are surrounded by legendary weapons.",
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "SouthHallway",
+          "enabled": "true",
+          "validKeyNames": ["none"]
+        }
+      ],
+      "items": [
+        {
+          "name": "LegendarySword",
+          "power": 15
+        }
+      ],
+      "opponents": []
+    }
+  ],
+  "player": {
+    "items": [
+      {
+        "name": "WoodenSword",
+        "power": 2
+      },
+      {
+        "name": "WoodenHelmet",
+        "power": 1
+      },
+      {
+        "name": "BrokenKey",
+        "power": 0
+      }
+    ]
+  }
+}
